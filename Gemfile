@@ -3,6 +3,7 @@ ruby '1.9.3'
 
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'bcrypt-ruby', '3.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,6 +15,10 @@ group :development, :test do
   gem 'spork-rails', github: 'sporkrb/spork-rails'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
+end
+
+group :development do
+  gem 'annotate', '2.5.0'
 end
 
 group :test do
